@@ -13,8 +13,6 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import Link from '@mui/material/Link';
 import { Link as RouterLink } from 'react-router-dom'
-import { ButtonGroup, Paper } from '@mui/material';
-import { Mode } from '../constants';
 
 const pages = ['home', 'about', 'contact'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -48,7 +46,7 @@ const ResponsiveAppBar = (props) => {
             component="div"
             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
           >
-            Tukul llc
+           M.Soft
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -100,9 +98,9 @@ const ResponsiveAppBar = (props) => {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: '#fff', display: 'block' }}
               >
-                <Link component={RouterLink} to={page} sx={{ color: "white" }}><Typography textAlign="center">{page}</Typography></Link>
+                <Link component={RouterLink} to={page} sx={{ color: "#fff" }}><Typography textAlign="center">{page}</Typography></Link>
               </Button>
             ))}
           </Box>
